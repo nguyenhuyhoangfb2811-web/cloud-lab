@@ -1,0 +1,14 @@
+services:
+  backend:
+    build: ./mern-demo/server
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./mern-demo/server/.env
+    
+  frontend:
+    build: ./mern-demo/client
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
