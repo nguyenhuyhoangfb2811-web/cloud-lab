@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  backend:
+    image: hhyaz/mern-backend:1.0
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - MONGODB_URI=mongodb+srv://hilvyq123qaz_db_user:huyhoang2026@cluster0.d7ekhyu.mongodb.net/?appName=Cluster0
+  frontend:
+    image: hhyaz/mern-frontend:1.0
+    ports:
+      - "5173:5173"
