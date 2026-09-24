@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div style={{ padding: '20px', fontFamily: 'Arial', maxWidth: '600px', margin: 'auto', color: '#333' }}>
-      <h2>Quản Lý Sinh Viên MERN Docker</h2>
+      <h2>Quản Lý Sinh Viên MERN - V2.0 Huy Hoàng</h2>
       <form onSubmit={handleSubmit} style={{ marginBottom: '20px', display: 'flex', gap: '10px', flexDirection: 'column' }}>
         <input placeholder="MSSV (ví dụ: B530001)" value={form.studentId} onChange={e => setForm({...form, studentId: e.target.value})} style={{padding: '8px'}} required />
         <input placeholder="Họ tên" value={form.name} onChange={e => setForm({...form, name: e.target.value})} style={{padding: '8px'}} required />
